@@ -1,0 +1,521 @@
+.cv {
+    background: linear-gradient(
+      3deg,
+      rgba(37, 42, 46, 1) 0%,
+      rgba(30, 35, 38, 1) 50%,
+      rgba(37, 42, 46, 1) 100%
+    );
+    color: #fff;
+    padding: 50px 20px;
+    h2 {
+      font-size: 48px;
+      font-family: var(--Righteous);
+      text-align: center;
+      padding: 20px 0px;
+    }
+
+    .contenedor-cv {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .fila {
+      display: flex;
+      .col {
+        width: 49%;
+        padding: 0 20px;
+        .Title-cv {
+          font-size: 28px;
+          font-family: var(--Righteous);
+          margin-bottom: 20px;
+        }
+      }
+        .izquierda {
+          border-right: 2px solid #252a2e;
+        }
+        .derecha {
+          border-left: 2px solid #252a2e;
+        }
+        .item {
+          padding: 25px;
+          margin-bottom: 36px;
+          background-color: #1e2326;
+          position: relative;
+          border-radius: 10px;
+          .NavlinkStyle{
+            text-decoration: none;
+            color:  white;
+          }
+        
+          h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .casa {
+            color: #1cb698;
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+          }
+          .fecha {
+            color: #1cb698;
+            display: block;
+            margin-bottom: 10px;
+          }
+          a {
+            line-height: 24px;
+          }
+          .conectori {
+            height: 2px;
+            background-color: #1cb698;
+            width: 47px;
+            position: absolute;
+            top: 50%;
+            right: -47px;
+            z-index: 5;
+            .circuloi {
+              display: block;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background-color: #1cb698;
+              float: right;
+              position: relative;
+              bottom: 4px;
+            }
+          }
+        
+          .conectord {
+            height: 2px;
+            background-color: #1cb698;
+            width: 47px;
+            position: absolute;
+            top: 50%;
+            left: -47px;
+            z-index: 5;
+            .circulod {
+              display: block;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background-color: #1cb698;
+              float: left;
+              position: relative;
+              bottom: 4px;
+            }
+          }
+        }
+        .izq {
+          border-right: 2px solid #1cb698;
+          margin-right: 20px;
+        }
+        .der {
+          border-left: 2px solid #1cb698;
+          margin-left: 20px;
+        
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .cv {
+      background: linear-gradient(
+        3deg,
+        rgba(37, 42, 46, 1) 0%,
+        rgba(30, 35, 38, 1) 50%,
+        rgba(37, 42, 46, 1) 100%
+      );
+      color: #fff;
+      padding: 50px 20px;
+      h2 {
+        font-size: 48px;
+        font-family: var(--Righteous);
+        text-align: center;
+        padding: 20px 0px;
+      }
+  
+      .contenedor-cv {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .col {
+          width: 70%;
+          padding: 0 20px;
+          .Title-cv {
+            font-size: 28px;
+            font-family: var(--Righteous);
+            margin-bottom: 20px;
+        text-align: center;
+
+          }
+        }
+          .izquierda {
+            border-right: none;
+          }
+          .derecha {
+            border-left: none;
+          }
+          .item {
+            
+            padding: 25px;
+            margin-bottom: 25px;
+            background-color: #1e2326;
+            position: relative;
+            border-radius: 10px;
+            .NavlinkStyle{
+              text-decoration: none;
+              color:  white;
+            }
+          
+            h4 {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+            .casa {
+              color: #1cb698;
+              font-size: 22px;
+              font-weight: bold;
+              display: block;
+            }
+            .fecha {
+              color: #1cb698;
+              display: block;
+              margin-bottom: 10px;
+            }
+            a {
+              line-height: 24px;
+            }
+            .conectori {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              right: -47px;
+              z-index: 5;
+              .circuloi {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: right;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          
+            .conectord {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              left: -47px;
+              z-index: 5;
+              .circulod {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: left;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          }
+          .izq {
+            border-right: 2px solid #1cb698;
+            border-left: 2px solid #1cb698;
+
+            margin-right: 0px;
+            
+          }
+          .der {
+            border-left: 2px solid #1cb698;
+            border-right: 2px solid #1cb698;
+
+            margin-left:  0px;
+          
+        }
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    .cv {
+      background: linear-gradient(
+        3deg,
+        rgba(37, 42, 46, 1) 0%,
+        rgba(30, 35, 38, 1) 50%,
+        rgba(37, 42, 46, 1) 100%
+      );
+      color: #fff;
+      padding: 50px 20px;
+      h2 {
+        font-size: 48px;
+        font-family: var(--Righteous);
+        text-align: center;
+        padding: 20px 0px;
+      }
+  
+      .contenedor-cv {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .col {
+          width: 70%;
+          padding: 0 20px;
+          .Title-cv {
+            font-size: 28px;
+            font-family: var(--Righteous);
+            margin-bottom: 20px;
+        text-align: center;
+
+          }
+        }
+          .izquierda {
+            border-right: none;
+          }
+          .derecha {
+            border-left: none;
+          }
+          .item {
+            
+            padding: 25px;
+            margin-bottom: 25px;
+            background-color: #1e2326;
+            position: relative;
+            border-radius: 10px;
+            .NavlinkStyle{
+              text-decoration: none;
+              color:  white;
+            }
+          
+            h4 {
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+            .casa {
+              color: #1cb698;
+              font-size: 20px;
+              font-weight: bold;
+              display: block;
+              text-align: center;
+              margin: 10px 0px;
+            }
+            .fecha {
+              color: #1cb698;
+              display: block;
+              margin-bottom: 10px;
+            }
+            a {
+              line-height: 24px;
+            }
+            .conectori {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              right: -47px;
+              z-index: 5;
+              .circuloi {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: right;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          
+            .conectord {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              left: -47px;
+              z-index: 5;
+              .circulod {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: left;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          }
+          .izq {
+            border-right: 2px solid #1cb698;
+            border-left: 2px solid #1cb698;
+
+            margin-right: 0px;
+            
+          }
+          .der {
+            border-left: 2px solid #1cb698;
+            border-right: 2px solid #1cb698;
+
+            margin-left:  0px;
+          
+        }
+      }
+    }
+  }
+  @media (max-width: 470px) {
+    .cv {
+      background: linear-gradient(
+        3deg,
+        rgba(37, 42, 46, 1) 0%,
+        rgba(30, 35, 38, 1) 50%,
+        rgba(37, 42, 46, 1) 100%
+      );
+      color: #fff;
+      padding: 50px 20px;
+      h2 {
+        font-size: 48px;
+        font-family: var(--Righteous);
+        text-align: center;
+        padding: 20px 0px;
+      }
+  
+      .contenedor-cv {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .col {
+          width: 70%;
+          padding: 0 20px;
+          .Title-cv {
+            font-size: 28px;
+            font-family: var(--Righteous);
+            margin-bottom: 20px;
+        text-align: center;
+
+          }
+        }
+          .izquierda {
+            border-right: none;
+          }
+          .derecha {
+            border-left: none;
+          }
+          .item {
+            
+            padding: 25px;
+            margin-bottom: 25px;
+            background-color: #1e2326;
+            position: relative;
+            border-radius: 10px;
+            .NavlinkStyle{
+              text-decoration: none;
+              color:  white;
+            }
+          
+            h4 {
+              font-size: 13px;
+              margin-bottom: 10px;
+            }
+            .casa {
+              color: #1cb698;
+              font-size: 14px;
+              font-weight: bold;
+              display: block;
+              text-align: center;
+              margin: 10px 0px;
+            }
+            .fecha {
+              color: #1cb698;
+              display: block;
+              margin-bottom: 10px;
+            }
+            a {
+              line-height: 10px;
+            }
+            p{
+              font-size: 10px;
+              text-align: left;
+            }
+            .conectori {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              right: -47px;
+              z-index: 5;
+              .circuloi {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: right;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          
+            .conectord {
+              display: none;
+              height: 2px;
+              background-color: #1cb698;
+              width: 47px;
+              position: absolute;
+              top: 50%;
+              left: -47px;
+              z-index: 5;
+              .circulod {
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #1cb698;
+                float: left;
+                position: relative;
+                bottom: 4px;
+              }
+            }
+          }
+          .izq {
+            border-right: 2px solid #1cb698;
+            border-left: 2px solid #1cb698;
+
+            margin-right: 0px;
+            
+          }
+          .der {
+            border-left: 2px solid #1cb698;
+            border-right: 2px solid #1cb698;
+
+            margin-left:  0px;
+          
+        }
+      }
+    }
+  }

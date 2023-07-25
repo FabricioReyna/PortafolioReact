@@ -1,0 +1,81 @@
+.Portafolio {
+    background: linear-gradient(
+      3deg,
+      rgba(37, 42, 46, 1) 0%,
+      rgba(30, 35, 38, 1) 50%,
+      rgba(37, 42, 46, 1) 100%
+    );
+    color: #fff;
+    padding: 50px 20px;
+    h2 {
+      font-size: 48px;
+      font-family: var(--Righteous);
+      text-align: center;
+      padding: 20px 0px;
+    }
+    h3 {
+      font-size: 28px;
+      font-family: var(--Righteous);
+      text-align: center;
+      padding: 20px 0px;
+    }
+    .contenedor-Portafolio {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .proyecto {
+        position: relative;
+        max-width: 450px;
+        height: fit-content;
+        margin: 10px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 250px;
+          display: block;
+        }
+        a {
+          text-decoration: none;
+        }
+        p {
+          color: #fff;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+
+          background: linear-gradient(
+            rgba(28, 182, 152, 0.8),
+            rgba(28, 182, 152, 0.8)
+          );
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition: 1s;
+          font-size: 18px;
+          letter-spacing: 3px;
+          opacity: 0;
+          h4 {
+            margin-bottom: 20px;
+            transition: 0.1s;
+            color: #131517;
+          }
+        }
+        .overlay:hover {
+          opacity: 1;
+          h4 {
+            margin-bottom: 0px;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
