@@ -6,7 +6,7 @@ const InicioPage = () => {
     <div  className="inicio" id="inicio">
       <div className="contenedor-banner">
         <div className="contenedor-img">
-          <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690335910/arp1qymzvdjbhneb4umj.jpg" alt="bg" />
+          <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690335910/FabriIIcon.jpg" alt="bg" />
         </div>
         <h1>Fabricio Reyna</h1>
         <h2>Desarrollador Frontend </h2>
