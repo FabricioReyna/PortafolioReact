@@ -85,7 +85,7 @@ const AboutMe = () => {
               </div>
               <div className="intereses">
                 <PiCarSimpleBold className="IntestIcon" />
-                CARS
+                AUTOS
               </div>
             </div>
           </div>
