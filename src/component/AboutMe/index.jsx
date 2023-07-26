@@ -16,7 +16,7 @@ const AboutMe = () => {
       <div className="contenido-seccion">
         <h2>Sobre Mi</h2>
         <p>
-          Hola, mi nombre es <span> Fabrcio Reyna </span> y me dedico al Desarrollo Frontend.
+          Hola, mi nombre es <span> Fabricio Reyna </span> y me dedico al Desarrollo Frontend.
           Poseo una amplia experiencia y habilidades en distintas tecnologías y
           lenguajes, incluyendo HTML, CSS, JavaScript, React, así como el uso de
           diversas librerías como Boostrap y Tailwind CSS. A lo largo de mi
