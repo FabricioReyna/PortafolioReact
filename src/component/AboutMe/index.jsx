@@ -46,7 +46,7 @@ const AboutMe = () => {
               </li>
               <li>
                 <strong>Website</strong>
-                www.example.com
+                https://portafoliofabricioreyna.netlify.app/
               </li>
               <li>
                 <strong>Ubicacion</strong>
