@@ -93,7 +93,7 @@ const AboutMe = () => {
   <h2>Ver mi CV</h2>
   <div className="seccion">
   <div className="seccion-descargar">
-    <h4 className="title-hidden">Español</h4>
+    <h4 className="title-hidden">Español/Spanish</h4>
     <button id="descargar"  onClick={() => window.open("https://drive.google.com/file/d/1yQxttqD9jZ55hX-_CT2jP7ulXHqQbgKe/view?usp=sharing", "_blank", "noopener noreferrer")}>
       <span className="Span-large">Español / Spanish</span> 
       <BiSolidBinoculars className="DowIcon" />
@@ -102,7 +102,7 @@ const AboutMe = () => {
   </div>
   <span className="or">or</span>
   <div className="seccion-descargar">
-    <h4 className="title-hidden">Inglés</h4>
+    <h4 className="title-hidden">Inglés/English</h4>
     <button id="descargar" onClick={() => window.open("https://drive.google.com/file/d/1wRj-hsdawd64ltKTs0uJl1m4HwPxyWYJ/view?usp=sharing", "_blank", "noopener noreferrer")}>
       <span className="Span-large">Inglés / English</span>
       <BiSolidBinoculars className="DowIcon" />
