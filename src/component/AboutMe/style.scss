@@ -228,18 +228,18 @@
   
   
           .title-hidden{
-            display: none;
+            display: flex;
           }
           button {
             cursor: pointer;
             background: transparent;
             border: 2px solid #fff;
-            width: 90px;
-            height: 90px;
+            width: 70px;
+            height: 70px;
             border-radius: 100%;
             display: block;
             margin: 20px auto;
-            padding: 10px 22px;
+            padding: 5px 12px;
             font-size: 16px;
             color: #fff;
             z-index: 10;
@@ -248,6 +248,7 @@
             align-items: center;
             .DowIcon{
               font-size: 50px;
+              color: #1cb698;
             }
             .Span-large{
               display: none;
