@@ -1,11 +1,9 @@
 import { IoLogoGameControllerB } from "react-icons/io";
-import { BiSolidCameraMovie, BiSolidPlaneAlt } from "react-icons/bi";
+import { BiSolidCameraMovie, BiSolidPlaneAlt, BiSolidBinoculars } from "react-icons/bi";
 import { BsMusicNoteBeamed } from "react-icons/bs";
 import { MdOutlineSportsBasketball } from "react-icons/md";
 import { PiCarSimpleBold } from "react-icons/pi";
-import {AiOutlineDownload} from "react-icons/ai"
 import "./style.scss";
-import { NavLink } from "react-router-dom";
 
 
 
@@ -63,7 +61,7 @@ const AboutMe = () => {
           {/* <!-- Intereses --> */}
           <div className="col">
             <h3>Intereses</h3>
-            <div className="conenedor-intereses">
+            <div className="contenedor-intereses">
               <div className="intereses">
                 <IoLogoGameControllerB className="IntestIcon" />
                 JUEGOS
@@ -92,30 +90,27 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="contenido-descargar">
-          <h2>Descargar cv</h2>
-          <div className="seccion-descargar">
-            <h4 className="title-hidden"> Español </h4>
-            <button id="descargar">
-            <NavLink to="./src/Doc/[ES]CV-Fabricio Reyna.pdf" target="_blank" download>
- <span className="Span-large"> Español / Spanish</span> 
-           
-              <AiOutlineDownload className="DowIcon"/>
-</NavLink>
-              <span className="overlay"></span>
-            </button>
-            <span className="or">or</span>
-            <h4 className="title-hidden"> Ingles </h4>
-
-            <button id="descargar">
-            <NavLink to="./src/Doc/[ES]CV-Fabricio Reyna.pdf" target="_blank" download>
- <span className="Span-large"> Ingles / English</span>
- <AiOutlineDownload className="DowIcon"/>
-</NavLink>
-
-              <span className="overlay"></span>
-            </button>
-          </div>
-        </div>
+  <h2>Ver mi CV</h2>
+  <div className="seccion">
+  <div className="seccion-descargar">
+    <h4 className="title-hidden">Español</h4>
+    <button id="descargar"  onClick={() => window.open("https://drive.google.com/file/d/1yQxttqD9jZ55hX-_CT2jP7ulXHqQbgKe/view?usp=sharing", "_blank", "noopener noreferrer")}>
+      <span className="Span-large">Español / Spanish</span> 
+      <BiSolidBinoculars className="DowIcon" />
+    </button>
+    <span className="overlay"></span>
+  </div>
+  <span className="or">or</span>
+  <div className="seccion-descargar">
+    <h4 className="title-hidden">Inglés</h4>
+    <button id="descargar" onClick={() => window.open("https://drive.google.com/file/d/1wRj-hsdawd64ltKTs0uJl1m4HwPxyWYJ/view?usp=sharing", "_blank", "noopener noreferrer")}>
+      <span className="Span-large">Inglés / English</span>
+      <BiSolidBinoculars className="DowIcon" />
+    </button>
+    <span className="overlay"></span>
+  </div>
+  </div>
+</div>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@
       margin: auto;
 
       p {
-        font-size: 18px;
+        font-size: 1.1em;
         line-height: 22px;
         margin-bottom: 20px;
 
@@ -55,96 +55,104 @@
           }
         }
       }
-      .conenedor-intereses {
-        display: flex;
-        flex-wrap: wrap;
 
-        .intereses {
-          width: 100px;
-          height: 100px;
-          background: #252a2e;
-          border-radius: 10px;
-          margin: 0 15px 15px 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          transition: 0.3s;
-    
-          .IntestIcon{
-            font-size: 30px;
-            margin-bottom: 10px;
-          }
-        }
-        .intereses:hover {
-          background-color: #fff;
-          color: #1cb698;
-          cursor: pointer;
-        }
-      }
     }
-
-    .seccion-descargar {
+    .contenido-descargar {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
-      .title-hidden{
-        display: none;
+      align-items: center;
+      flex-direction: column;
+      .seccion{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+      .seccion-descargar {
+        justify-content: center;
+
+
+        .title-hidden{
+          display: none;
+        }
+        button {
+          cursor: pointer;
+          background: transparent;
+          border: 2px solid #fff;
+          width: 230px;
+          display: block;
+          margin: 20px auto;
+          padding: 10px 22px;
+          font-size: 16px;
+          color: #fff;
+          z-index: 10;
+          position: relative;
+          display: flex; justify-content: space-evenly;
+          align-items: center;
+          .DowIcon{
+            font-size: 20px;
+          }
+          
+          
+       
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: #1cb698;
+          z-index: -1;
+          transition: 0.3s;
+        } 
+        .overlay:hover {
+          width: 100%;
+          background-color: #1cb698;
+
+        }
       }
-    }
-    .or {
+      }
+   .or {
       font-size: 1.3em;
       text-transform: uppercase;
     }
-    button {
-      cursor: pointer;
-      background: transparent;
-      border: 2px solid #fff;
-      width: 230px;
-      display: block;
-      margin: 20px auto;
-      padding: 10px 22px;
-      font-size: 16px;
-      color: #fff;
-      z-index: 10;
-      position: relative;
-      display: flex; justify-content: space-evenly;
-      align-items: center;
-      a {
-        text-decoration: none;
-        color: #fff;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        align-items: center;
-            .DowIcon{
-              font-size: 20px;
-            }
-      }
       
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #1cb698;
-        z-index: -1;
-        transition: 0.3s;
+    }
+
+   .contenedor-intereses{
+    display: flex;
+     flex-wrap: wrap;
+    .intereses {
+      width: 100px;
+      height: 100px;
+      background: #252a2e;
+      border-radius: 10px;
+      margin: 0 15px 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+
+      .IntestIcon{
+        font-size: 30px;
+        margin-bottom: 10px;
       }
     }
-    button:hover {
-      .overlay {
-        width: 100%;
-      }
+    .intereses:hover {
+      background-color: #fff;
+      color: #1cb698;
+      cursor: pointer;
     }
+  }
+ 
   }
   @media (max-width: 1200px) {
     .sobremi {
-      background: var(--bg-1);
       color: #fff;
       padding: 50px 20px;
+      transition: all 2000ms ease-in-out;
       h2 {
         font-size: 48px;
         font-family: var(--Righteous);
@@ -156,8 +164,8 @@
         margin: auto;
   
         p {
-          font-size: 15px;
-          line-height: 20px;
+          font-size: 0.9em;
+          line-height: 22px;
           margin-bottom: 20px;
   
           span {
@@ -197,94 +205,109 @@
             }
           }
         }
-        .conenedor-intereses {
-          display: flex;
-          flex-wrap: wrap;
   
-          .intereses {
-            width: 100px;
-            height: 100px;
-            background: #252a2e;
-            border-radius: 10px;
-            margin: 0 15px 15px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-      
-            .IntestIcon{
-              font-size: 30px;
-              margin-bottom: 10px;
-            }
+      }
+      .contenido-descargar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .seccion{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 100%;
+        .seccion-descargar {
+          justify-content: center;
+  
+  
+          .title-hidden{
+            display: none;
           }
-          .intereses:hover {
-            background-color: #fff;
-            color: #1cb698;
+          button {
             cursor: pointer;
+            background: transparent;
+            border: 2px solid #fff;
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 22px;
+            font-size: 16px;
+            color: #fff;
+            z-index: 10;
+            position: relative;
+            display: flex; justify-content: space-evenly;
+            align-items: center;
+            .DowIcon{
+              font-size: 50px;
+            }
+            .Span-large{
+              display: none;
+            }
+            
+         
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #1cb698;
+            z-index: -1;
+            transition: 0.3s;
+          } 
+          .overlay:hover {
+            width: 100%;
+            background-color: #1cb698;
+  
           }
         }
-      }
-  
-      .seccion-descargar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .or {
+        }
+     .or {
         font-size: 1.3em;
         text-transform: uppercase;
       }
-      button {
-        cursor: pointer;
-        background: transparent;
-        border: 2px solid #fff;
-        width: 230px;
-        display: block;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        color: #fff;
-        z-index: 10;
-        position: relative;
-        display: flex; justify-content: space-evenly;
-        align-items: center;
-        a {
-          text-decoration: none;
-          color: #fff;
-          cursor: pointer;
-          display: flex;
-          justify-content: space-evenly;
-          width: 100%;
-          align-items: center;
-              .DowIcon{
-                font-size: 20px;
-              }
-        }
         
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0;
-          height: 100%;
-          background-color: #1cb698;
-          z-index: -1;
-          transition: 0.3s;
+      }
+  
+     .contenedor-intereses{
+      display: flex;
+       flex-wrap: wrap;
+      .intereses {
+        width: 100px;
+        height: 100px;
+        background: #252a2e;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+  
+        .IntestIcon{
+          font-size: 30px;
+          margin-bottom: 10px;
         }
       }
-      button:hover {
-        .overlay {
-          width: 100%;
-        }
+      .intereses:hover {
+        background-color: #fff;
+        color: #1cb698;
+        cursor: pointer;
       }
+    }
+   
     }
   }
   @media (max-width: 640px) {
     .sobremi {
-      background: var(--bg-1);
       color: #fff;
       padding: 50px 20px;
+      transition: all 2000ms ease-in-out;
       h2 {
         font-size: 48px;
         font-family: var(--Righteous);
@@ -296,10 +319,9 @@
         margin: auto;
   
         p {
-          font-size: 14px;
-          line-height: 18px;
+          font-size: 0.8em;
+          line-height: 22px;
           margin-bottom: 20px;
-          text-align: justify;
   
           span {
             color: #1cb698;
@@ -310,14 +332,13 @@
       .fila {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
   
         .col {
           width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
           h3 {
             font-size: 28px;
@@ -326,18 +347,20 @@
           }
           ul {
             list-style: none;
-  
             li {
               margin: 12px 0;
-              display: flex;
+            display: flex;
+              justify-content: center;
+              align-items: start;
               flex-direction: column;
-              padding-bottom: 10px;
+  
               strong {
                 display: inline-block;
                 color: #1cb698;
                 width: 130px;
               }
               span {
+                margin-top: 2px;
                 background-color: #1cb698;
                 padding: 3px;
                 font-weight: bold;
@@ -346,103 +369,103 @@
             }
           }
         }
-        .conenedor-intereses {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .intereses {
-            width: 100px;
-            height: 100px;
-            background: #252a2e;
-            border-radius: 10px;
-            margin: 0 15px 15px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-      
-            .IntestIcon{
-              font-size: 30px;
-              margin-bottom: 10px;
-            }
-          }
-          .intereses:hover {
-            background-color: #fff;
-            color: #1cb698;
-            cursor: pointer;
-          }
-        }
-      }
   
-      .seccion-descargar {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        flex-wrap: wrap;
-
-        .title-hidden{
-          display: flex;
-          margin: 10px;
-          color: #1cb698;
-        }
-        
       }
-      .or {
+      .contenido-descargar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .seccion{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+        .seccion-descargar {
+          justify-content: center;
+  
+  
+          .title-hidden{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          button {
+            cursor: pointer;
+            background: transparent;
+            border: 2px solid #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: block;
+            margin: 20px auto;
+            padding: 0px 0px;
+            font-size: 16px;
+            color: #fff;
+            z-index: 10;
+            position: relative;
+            display: flex; justify-content: space-evenly;
+            align-items: center;
+            .DowIcon{
+              font-size: 20px;
+            }
+            
+
+         
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #1cb698;
+            z-index: -1;
+            transition: 0.3s;
+          } 
+          .overlay:hover {
+            width: 100%;
+            background-color: #1cb698;
+  
+          }
+        }
+        }
+     .or {
         font-size: 1.3em;
         text-transform: uppercase;
       }
-      button {
-        cursor: pointer;
-        background: transparent;
-        border: 2px solid #fff;
-        width: 50px;
-        display: block;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        border-radius: 100%;
-        height: 50px;
-        color: #fff;
-        z-index: 10;
-        position: relative;
-        display: flex; justify-content: space-evenly;
+        
+      }
+  
+     .contenedor-intereses{
+      display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+      .intereses {
+        width: 100px;
+        height: 100px;
+        background: #252a2e;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        a {
-
-       
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-evenly;
-            width: max-content;
-            align-items: center;
-                span{
-                  display: none;
-                }
-                .DowIcon{
-                  font-size: 20px;
-                }
-          
-        }
-      
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0;
-          height: 100%;
-          background-color: #1cb698;
-          z-index: -1;
-          transition: 0.3s;
+        justify-content: center;
+        transition: 0.3s;
+  
+        .IntestIcon{
+          font-size: 30px;
+          margin-bottom: 10px;
         }
       }
-      button:hover {
-        .overlay {
-          width: 100%;
-        }
+      .intereses:hover {
+        background-color: #fff;
+        color: #1cb698;
+        cursor: pointer;
       }
+    }
+   
     }
   }
