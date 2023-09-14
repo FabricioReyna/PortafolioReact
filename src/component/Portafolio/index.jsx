@@ -9,15 +9,13 @@ const MePorta = () => {
           <h3>Ultimas actualizaciones...</h3>
           <div className="galeria">
             <div className="proyecto">
-            <NavLink href="https://s10-12-m-node-react-paypal.vercel.app/" target="_blank" >
-             
               <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1694710474/usz9nufculfpnvbyfptx.jpg" alt="CountryPay" />
               <div className="overlay">
-                  <h4>Next JS Paypal</h4>
+                <NavLink to="https://s10-12-m-node-react-paypal.vercel.app/" target="_blank">
+                  <h4>CountryPay</h4>
                   <p>Vista Previa</p>
-                
+                </NavLink>
               </div>
-              </NavLink>
             </div>
             <div className="proyecto">
               <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690335908/isuzf59z2hbiejz6nh1g.png" alt="a" />
