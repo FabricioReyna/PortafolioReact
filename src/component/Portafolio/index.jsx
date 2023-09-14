@@ -9,11 +9,11 @@ const MePorta = () => {
           <h3>Ultimas actualizaciones...</h3>
           <div className="galeria">
             <div className="proyecto">
-            <NavLink href="https://illustrious-medovik-87eb50.netlify.app/" target="_blank" >
+            <NavLink href="hhttps://s10-12-m-node-react-paypal.vercel.app/" target="_blank" >
              
-              <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690336622/zpqgitf3o8k94ezef41n.png" alt="a" />
+              <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1694710136/mmq5ghu0oklqi9c6ld29.jpg" alt="CountryPay" />
               <div className="overlay">
-                  <h4>Eccomerce React</h4>
+                  <h4>Next JS Paypal</h4>
                   <p>Vista Previa</p>
                 
               </div>
@@ -41,7 +41,7 @@ const MePorta = () => {
             </div>
             <div className="proyecto">
             <NavLink to="https://c12-accessbank.vercel.app/" target="_blank">
-              <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690335909/AccesLandig.png" alt="a" />
+              <img src="https://res.cloudinary.com/dhb9rdaoc/image/upload/v1690335909/AccesLandig.png" alt="AccesBank" />
               <div className="overlay">
                 
                   <h4>AccesBank</h4>
